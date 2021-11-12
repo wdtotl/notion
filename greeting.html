@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho:wght@700&family=IBM+Plex+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16" rel="stylesheet">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -51,7 +51,7 @@ h1 {
 
 .clock {
     display: inline;
-    font-family: 'IBM Plex Mono';
+    font-family: 'DotGothic16';
     font-size: 2em;
    
 }
@@ -69,14 +69,14 @@ h1 {
 .date {
     display: inline;
     min-width: 162px;
-    font-family: 'IBM Plex Mono';
+    font-family: 'DotGothic16';
     font-size: 2em;
     padding-right: 30px;
 }
 .greet{
     
     display:inline;
-    font-family: 'Sawarabi Mincho';
+    font-family: 'DotGothic16';
     font-size: 2rem;
      padding-right: 30px;
 }
@@ -84,7 +84,7 @@ h1 {
     </style>
 </head>
 <body>
-    <link href="https://fonts.googleapis.com/css?family=Lobster|Roboto:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=DotGothic16" rel="stylesheet">
 
 <div class="full-table">
   <div class="table-cell">
@@ -117,10 +117,10 @@ var hour = zeros(twelveHour(today.getHours()));
 var minutes = zeros(today.getMinutes());
 var seconds = zeros(today.getSeconds());
 if(today.getHours() >=12){
-    seconds+=" pm"
+    seconds+=" 午後"
 }
 else{
-    seconds+=" am"
+    seconds+=" 午前"
 }
 hrs = today.getHours();
 if (hrs < 12)
