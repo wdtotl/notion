@@ -117,11 +117,12 @@ var hour = zeros(twelveHour(today.getHours()));
 var minutes = zeros(today.getMinutes());
 var seconds = zeros(today.getSeconds());
 if(today.getHours() >=12){
-    seconds+=" 午後"
+    hour-="午後 "
 }
 else{
-    seconds+=" 午前"
+    hour-="午前 "
 }
+    
 hrs = today.getHours();
 if (hrs < 12)
         greet = 'おはよう！  ';
